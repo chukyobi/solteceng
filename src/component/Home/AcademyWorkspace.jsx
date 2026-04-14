@@ -6,6 +6,7 @@ import { FiMonitor, FiCpu, FiCoffee } from 'react-icons/fi';
 import AcademyLogo from '../../assets/academy-logo.svg';
 import Starlink from '../../assets/starlink.png';
 import Panel from '../../assets/panel.png';
+import { AcademyUrl } from '../../Utils/apiRequest';
 
 const AcademyWorkspace = () => {
    return (
@@ -61,7 +62,7 @@ const AcademyWorkspace = () => {
                   </div>
                </div>
 
-               <a href="https://soltec-academy-two.vercel.app/" className="mt-4 self-start bg-yellow-400 hover:bg-yellow-500 text-gray-950 px-8 py-3 rounded-full font-bold tracking-wide transition-all shadow-xl shadow-yellow-400/20">
+               <a href={`${AcademyUrl}`} target="_self" className="mt-4 self-start bg-yellow-400 hover:bg-yellow-500 text-gray-950 px-8 py-3 rounded-full font-bold tracking-wide transition-all shadow-xl shadow-yellow-400/20">
                   Explore Courses
                </a>
             </motion.div>
@@ -96,7 +97,7 @@ const AcademyWorkspace = () => {
                   </div>
                </div>
 
-               <a href="https://soltec-academy-two.vercel.app/" className="self-center lg:self-end text-yellow-400 font-bold group flex items-center gap-2 hover:text-yellow-300">
+               <a href={`${AcademyUrl}/book-workspace`} target="_self" className="self-center lg:self-end text-yellow-400 font-bold group flex items-center gap-2 hover:text-yellow-300">
                   BOOK YOUR DESK TODAY
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                </a>
