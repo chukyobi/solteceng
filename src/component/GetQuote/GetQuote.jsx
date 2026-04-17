@@ -105,7 +105,7 @@ const GetQuote = () => {
     formData.append(`email`, values?.email);
     setAddLoading(true);
     try {
-      const response = await fetch(`${BaseURL}/get-quota/`, {
+      const response = await fetch(`/api/quote`, {
         method: 'POST',
         body: formData,
       });
